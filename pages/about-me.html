@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- link css-->
+    <!-- link Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- link CSS-->
     <link rel="stylesheet" href="../css/main.css">
 
     <!-- link favincon-->
-    <link rel="shortcut icon" href="../img/logo-astraly-2.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logo-astraly-2.jpg" type="image/x-icon">
 
     <title>About Me | Astraly</title>
 </head>
@@ -20,57 +23,68 @@
         <a href="https://wa.me/543518677413" target="_blank"><img src="../img/logo-whatsapp.png" alt="Logo de Whatsapp" class="boton-wap-imagen"></a>
     </div>
 
-    <header>
-        <div>
-            <img src="../img/logo-astraly-1.png" alt="logo instuticional Astraly">
-            <h1>
-                <a href="../index.html">Astraly</a>
-            </h1>
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="about-me.html">About Me</a>
-                </li>
-                <li>
-                    <a href="clases.html">Clases</a>
-                </li>
-                <li>
-                    <a href="e-book.html">E-book</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2 class="mg-main pd-main">Hola a todos!</h2>
-        <div class="mg-main pd-left-main pd-right-main">
-           <p class="p-about-me">Soy Andrea, actualmente vivo en Córdoba Capital, en el corazon de esta linda ciudad. Comencé este hermoso camino de yoga en 2014. A lo largo de los años fuí haciendo distintos cursos. Uno de ellos fue en 2017, en el cual  me forme como instructora de Hatha Yoga. Con el fin de compartir todo lo que la practica de yoga a mi me llena y me hace tan bien, me embarco en esta aventura de dar clases tanto presenciales como online.</p>
-           <img src="../img/pose-about-me.jpg" alt="Postura de yoga" class="img-about-me">
-        </div>
-    </main>
-    <footer>
-        <div>
-            <div class="column-direction">
-                <a class="datos-contacto" href="mailto:hola@astraly.com.ar" target="_blank"> ✉ hola@astraly.com.ar</a>
-                <a class="datos-contacto" href="https://wa.me/543518677413" target="_blank">📱 351-8677413 </a>
-                <a class="datos-contacto" href="https://goo.gl/maps/7uo51spFCZx939XP8" target="_blank">📍 Fructuoso Rivera 69, 13° C, Nueva Córdoba, Córdoba</a>
+    <div class="body-grid">
+        <header> 
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid d-flex justify-content-evenly">
+                    <div class="navbar-brand header-logo col-lg-7 justify-content-center">
+                        <img src="../img/logo-astraly-1.png" alt="logo instuticional Astraly">
+                        <h1>
+                            <a href="../index.html">Astraly</a>
+                        </h1>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse col-lg-5" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="../pages/about-me.html">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="../pages/clases.html">Clases</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="../pages/e-book.html">E-book</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="../pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main-about-me">
+            <h2 class="h2-about-me">About Me!</h2>
+            <div class="div-about-me">
+                <p class="p-about-me">Soy Andrea, actualmente vivo en Córdoba Capital, en el corazon de esta linda ciudad. Comencé este hermoso camino de yoga en 2014. A lo largo de los años fuí haciendo distintos cursos. Uno de ellos fue en 2017, en el cual  me forme como instructora de Hatha Yoga. Con el fin de compartir todo lo que la practica de yoga a mi me llena y me hace tan bien, me embarco en esta aventura de dar clases tanto presenciales como online.</p>
+                <img src="../img/pose-about-me.jpg" alt="Postura de yoga" class="img-about-me rounded-5">
             </div>
-            <div class="column-direction">
-                <p>Seguinos en nuestras Redes</p>
-                <div>
-                    <a href="https://www.facebook.com/astraly." target="_blank"><img class="img-footer" src="../img/logo-facebook.png" alt="Lodo de Facebook"> </a>
-                    <a href="https://www.instagram.com/astraly." target="_blank"><img class="img-footer" src="../img/logo-instagram.png" alt="Lodo de Facebook"> </a>
-                    <a href="https://www.twitter.com/astraly." target="_blank"><img class="img-footer" src="../img/logo-twitter.png" alt="Lodo de Facebook"></a>
+        </main>
+        <footer>
+            <div>
+                <div class="column-direction">
+                    <a class="datos-contacto" href="mailto:hola@astraly.com.ar" target="_blank"> ✉ hola@astraly.com.ar</a>
+                    <a class="datos-contacto" href="https://wa.me/543518677413" target="_blank">📱 351-8677413 </a>
+                    <a class="datos-contacto" href="https://goo.gl/maps/7uo51spFCZx939XP8" target="_blank">📍 Fructuoso Rivera 69, 13° C, Nueva Córdoba, Córdoba</a>
+                </div>
+                <div class="column-direction">
+                    <p>Seguinos en nuestras Redes</p>
+                    <div>
+                        <a href="https://www.facebook.com/astraly." target="_blank"><img class="img-footer" src="../img/logo-facebook.png" alt="Lodo de Facebook"> </a>
+                        <a href="https://www.instagram.com/astraly." target="_blank"><img class="img-footer" src="../img/logo-instagram.png" alt="Lodo de Facebook"> </a>
+                        <a href="https://www.twitter.com/astraly." target="_blank"><img class="img-footer" src="../img/logo-twitter.png" alt="Lodo de Facebook"></a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <p class="p-footer">Astraly © Reservados todos los derechos.</p>
-    </footer>
+            <p class="p-footer">Astraly © Reservados todos los derechos.</p>
+        </footer>
+    </div>
+    <!-- link Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
