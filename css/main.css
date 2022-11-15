@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 /* ESTILOS GENERALES */
@@ -13,6 +13,16 @@
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #866489;
+}
+
+/* estilos link, párrafos */
+
+a, p, h1, h2, h3, h4{
+    color: #ebdbc3;
+}
+
+a:hover{
+    color: #ebdbc3;
 }
 
 /* estilos body-grid */
@@ -48,12 +58,10 @@ header{
 
 header div div h1 a{
     text-decoration: none;
-    color: #ebdbc3;
     text-shadow: 3px 2px 5px black;
 }
 
 header div div h1 a:hover{
-    color: #ebdbc3;
     text-shadow: 3px 2px 5px black;
 }
 
@@ -77,6 +85,14 @@ nav div div ul li{
 
 main{
     grid-area: main;
+}
+
+.main-gral-padding{
+    padding: 0 1rem;
+}
+
+.main-gral-margin{
+    margin: 1rem 0;
 }
 
 /* estilos footer */
@@ -104,7 +120,6 @@ footer div div div{
 
 footer div div a{
     text-decoration: none;
-    color: #ebdbc3;
     text-shadow: 3px 2px 5px black;
     margin-bottom: 0.8rem;
     text-align: center;
@@ -112,12 +127,10 @@ footer div div a{
 
 footer div div a:hover{
     text-decoration: none;
-    color: #ebdbc3;
     text-shadow: 3px 2px 5px black;
 }
 
 footer div div p{
-    color: #ebdbc3;
     text-shadow: 3px 2px 5px black;
     padding-bottom: 1rem;
 }
@@ -133,7 +146,6 @@ footer div div p{
 
 .p-footer{
     text-align: center;
-    color: #ebdbc3;
     font-size: 1rem;
     font-style: italic;
     text-shadow: 3px 2px 5px black;
@@ -163,29 +175,16 @@ footer div div p{
 .main-index{
     display: flex;
     flex-direction: column;
-    padding: 0 1rem;
 }
 
 .img-home{
-    margin: 2rem 0rem 1rem;
     height: 15rem;
-}
-
-.p-home{
-    margin: 1rem 0rem;
-    color: #ebdbc3;
 }
 
 /* estilos -> About Me */
 
-.main-about-me{
-    padding: 0 1rem;
-}
-
 .h2-about-me{
-    color: #ebdbc3;
     text-align: center;
-    margin: 1rem 0;
 }
 
 .div-about-me{
@@ -196,7 +195,6 @@ footer div div p{
 }
 
 .p-about-me{
-    color: #ebdbc3;
     padding: 0 1rem;
 }
 
@@ -205,39 +203,50 @@ footer div div p{
     margin: 1rem 0;
 }
 
-
 /* estilos -> Clases */
 
 .estilos-clases{
-    display: inline-block;
-    width: 500px;
-    margin-right: 90px;
-    padding-left: 150px;
+    display: flex;
+    flex-direction: column;
 }
 
 .estilos-img-clases{
     height: 180px;
-    width: 300px;
+    width: 100%;
+    margin-top: 1rem;
 }
 
 /* estilos -> E-book */
 
-.e-book{
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    margin: 50px 0 50px 300px;
-    border: 1px solid black;
+.catalogo-e-book{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
 }
 
-.link-e-book{
-    display: inline-block;
-    color: blue;
-    text-decoration: underline;
-    margin-left: 300px;
-    width: 100px;
-    text-align: center;
+.e-book{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p-e-book{
+    padding: 1rem 0;
+}
+
+.img-e-book{
+    width: 150px;
+    height: 100%;
+}
+
+.a-e-book{
+    background-color: #ebdbc3;
+    color: #735376;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    box-shadow:3px 2px 5px black ;
 }
 
 /* estilos -> Contacto */
@@ -300,6 +309,10 @@ div label{
 
     /* estilos main */
 
+    .main-gral-margin{
+        margin: 1.5rem;
+    }
+
     /* estilos footer */
 
      footer div{
@@ -324,7 +337,6 @@ div label{
     .main-index{
         flex-direction: row;
         align-items: center;
-        margin: 1.5rem;
     }
 
     .img-home{
@@ -344,14 +356,51 @@ div label{
     }
 
     .p-about-me{
-        width: 30%;
+        width: 50%;
     }
 
     .img-about-me{
         width: auto;
     }
 
+    /* estilos -> Clases */
 
+    .estilos-clases{
+        flex-direction: row;
+    }
+    
+    .estilos-img-clases{
+        height: 200px;
+        width: 50%;
+    }
+
+    .p-clases{
+        margin: 0 1rem;
+    }
+    
+    /* estilos -> E-book */
+
+    .catalogo-e-book{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .e-book{
+        border: 2px solid grey;
+    }    
+
+    
+    .img-e-book{
+        width: 100%;
+        height: 300px;
+    }
+    
+    .a-e-book:hover{
+        border: 1px solid #ebdbc3;
+        background-color: #735376;
+        color:#ebdbc3;
+        box-shadow: 3px 2px 5px black ;
+    }
 
 
 

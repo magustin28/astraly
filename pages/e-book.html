@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- link css-->
+    <!-- link Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- link CSS-->
     <link rel="stylesheet" href="../css/main.css">
 
     <!-- link favincon-->
@@ -20,63 +23,82 @@
         <a href="https://wa.me/543518677413" target="_blank"><img src="../img/logo-whatsapp.png" alt="Logo de Whatsapp" class="boton-wap-imagen"></a>
     </div>
 
-    <header>
-        <div>
-            <img src="../img/logo-astraly-1.png" alt="logo instuticional Astraly">
-            <h1>
-                <a href="../index.html">Astraly</a>
-            </h1>
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="about-me.html">About Me</a>
-                </li>
-                <li>
-                    <a href="clases.html">Clases</a>
-                </li>
-                <li>
-                    <a href="e-book.html">E-book</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2 class="mg-main pd-main">Te presentamos nuestros E-books</h2>
-        <div>
-            <p class="e-book">E-book</p>
-            <p class="e-book">E-book</p>
-            <p class="e-book">E-book</p>
-        </div>
-        <div>
-            <p class="link-e-book">Descargar</p>
-            <p class="link-e-book">Descargar</p>
-            <p class="link-e-book">Descargar</p>
-        </div>
-    </main>
-    <footer>
-        <div>
-            <div class="column-direction">
-                <a class="datos-contacto" href="mailto:hola@astraly.com.ar" target="_blank"> ✉ hola@astraly.com.ar</a>
-                <a class="datos-contacto" href="https://wa.me/543518677413" target="_blank">📱 351-8677413 </a>
-                <a class="datos-contacto" href="https://goo.gl/maps/7uo51spFCZx939XP8" target="_blank">📍 Fructuoso Rivera 69, 13° C, Nueva Córdoba, Córdoba</a>
-            </div>
-            <div class="column-direction">
-                <p>Seguinos en nuestras Redes</p>
-                <div>
-                    <a href="https://www.facebook.com/astraly." target="_blank"><img class="img-footer" src="../img/logo-facebook.png" alt="Lodo de Facebook"> </a>
-                    <a href="https://www.instagram.com/astraly." target="_blank"><img class="img-footer" src="../img/logo-instagram.png" alt="Lodo de Facebook"> </a>
-                    <a href="https://www.twitter.com/astraly." target="_blank"><img class="img-footer" src="../img/logo-twitter.png" alt="Lodo de Facebook"></a>
+    <div class="body-grid">
+        <header> 
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid d-flex justify-content-evenly">
+                    <div class="navbar-brand header-logo col-lg-7 justify-content-center">
+                        <img src="../img/logo-astraly-1.png" alt="logo instuticional Astraly">
+                        <h1>
+                            <a href="../index.html">Astraly</a>
+                        </h1>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse col-lg-5" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="../pages/about-me.html">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="../pages/clases.html">Clases</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="../pages/e-book.html">E-book</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="../pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main-gral-padding main-gral-margin">
+            <h2 class="text-center"> E-books</h2>
+            <p class="main-gral-padding main-gral-margin">Si estas interesada en iniciarte en la práctica de Yoga, te invito a dar el primer paso comenzado por leer estos E-book</p>
+            <div class="catalogo-e-book">
+                <div class="e-book">
+                    <img class="img-e-book" src="../img/e-book-muchas-vidas-muchos-maestros.png" alt="E-book Muchas vidas muchos maestros Brian Weiss">
+                    <p class="p-e-book">Muchas vidas, muchos maestros</p>
+                    <a class="a-e-book" href="https://drive.google.com/file/d/1D3Lse-Zhi6TcPBmUpTD7-92DY-4s8X9D/view?usp=sharing" target="_blank">Descargar</a>
+                </div>
+                <div class="e-book">
+                    <img class="img-e-book" src="../img/e-book-adn-cosmico.png" alt="E-book ADN Cósmico Mia Astral">
+                    <p class="p-e-book">ADN Cósmico</p>
+                    <a class="a-e-book" href="https://drive.google.com/file/d/1D2hAj4-H5sQDwh2YCbryDxV9RB1VZPqk/view?usp=sharing" target="_blank">Descargar</a>
+                </div>
+                <div class="e-book">
+                    <img class="img-e-book" src="../img/e-book-este-dolor-no-es-mio.png" alt="E-book Este dolor no es mio Mark Wolynn">
+                    <p class="p-e-book">Este dolor no es mio</p>
+                    <a class="a-e-book" href="https://drive.google.com/file/d/1D35G056Z6GP4Br4o8BX3HL28FuFMVtLE/view?usp=sharing" target="_blank">Descargar</a>
                 </div>
             </div>
-        </div>
-        <p class="p-footer">Astraly © Reservados todos los derechos.</p>
-    </footer>
+        </main>
+        <footer>
+            <div>
+                <div class="column-direction">
+                    <a class="datos-contacto" href="mailto:hola@astraly.com.ar" target="_blank"> ✉ hola@astraly.com.ar</a>
+                    <a class="datos-contacto" href="https://wa.me/543518677413" target="_blank">📱 351-8677413 </a>
+                    <a class="datos-contacto" href="https://goo.gl/maps/7uo51spFCZx939XP8" target="_blank">📍 Fructuoso Rivera 69, 13° C, Nueva Córdoba, Córdoba</a>
+                </div>
+                <div class="column-direction">
+                    <p>Seguinos en nuestras Redes</p>
+                    <div>
+                        <a href="https://www.facebook.com/astraly." target="_blank"><img class="img-footer" src="../img/logo-facebook.png" alt="Lodo de Facebook"> </a>
+                        <a href="https://www.instagram.com/astraly." target="_blank"><img class="img-footer" src="../img/logo-instagram.png" alt="Lodo de Facebook"> </a>
+                        <a href="https://www.twitter.com/astraly." target="_blank"><img class="img-footer" src="../img/logo-twitter.png" alt="Lodo de Facebook"></a>
+                    </div>
+                </div>
+            </div>
+            <p class="p-footer">Astraly © Reservados todos los derechos.</p>
+        </footer>
+    </div>
+    <!-- link Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
