@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*border: 1px solid black;*/
+    border: 1px solid black;
 }
 
 /* ESTILOS GENERALES */
@@ -30,7 +30,7 @@ a:hover{
 .body-grid{
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 0.5fr 0.5fr ;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
     grid-template-rows: 0.3fr 1fr 0.5fr;
     grid-template-areas: 
     "header header header"
@@ -251,35 +251,50 @@ footer div div p{
 
 /* estilos -> Contacto */
 
+form{
+    display: flex;
+    justify-content: center;
+}
+
 fieldset{
-    width: 800px;
+    width: 90%;
 }
 
 fieldset legend{
-    font-size: 20px;
+    color: #ebdbc3;
+    font-size: 1.3rem;
     font-weight: bold;
     text-align: center;
 }
 
 fieldset div{
-    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
 }
 
-div label{
-    width: 200px;
-    display: inline-block;
-    margin: 0 0 0 100px;
+fieldset div label{
+    color: #ebdbc3;
+    margin: 1rem 0;
 }
+
+fieldset div input{
+    border-radius: 1rem;
+    box-shadow: 3px 2px 5px black;
+}
+
+fieldset div textarea{
+    border-radius: 1rem;
+    box-shadow: 3px 2px 5px black ;
+}
+
 
 .form-button{
-    color: white;
-    background: blue;
-    height: 30px;
-    width: 70px;
-    margin: 0 150px 50px;
+    background-color: #ebdbc3;
+    color: #735376;
+    height: 2rem;
+    width: 50%;
+    margin: 1rem;
 }
-
-
 
 @media screen and (min-width:992px){
 
@@ -389,7 +404,6 @@ div label{
         border: 2px solid grey;
     }    
 
-    
     .img-e-book{
         width: 100%;
         height: 300px;
@@ -401,6 +415,48 @@ div label{
         color:#ebdbc3;
         box-shadow: 3px 2px 5px black ;
     }
+
+    /* estilos -> Contacto */
+
+    fieldset{
+        width: 50%;
+    }
+
+    fieldset div{
+        flex-direction: row;
+        justify-content: center;
+    }
+    fieldset div label{
+        width: 25%;
+    }
+
+    fieldset div input{
+        margin: 0.7rem 0;
+        width: 40%;
+    }
+
+    fieldset div textarea{
+        margin: 0.7rem 0;
+        width: 40%;
+    }
+
+    .form-button{
+        width: 20%;
+    }
+
+    .form-button:hover{
+        border: 1px solid #ebdbc3;
+        background-color: #735376;
+        color:#ebdbc3;
+        box-shadow: 3px 2px 5px black ;
+    }
+    
+
+
+
+
+
+
 
 
 
