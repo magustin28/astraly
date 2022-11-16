@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 /* ESTILOS GENERALES */
@@ -30,7 +30,7 @@ a:hover{
 .body-grid{
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 0.5fr 0.5fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 0.3fr 1fr 0.5fr;
     grid-template-areas: 
     "header header header"
@@ -121,7 +121,6 @@ footer div div div{
 footer div div a{
     text-decoration: none;
     text-shadow: 3px 2px 5px black;
-    margin-bottom: 0.8rem;
     text-align: center;
 }
 
@@ -132,12 +131,14 @@ footer div div a:hover{
 
 footer div div p{
     text-shadow: 3px 2px 5px black;
-    padding-bottom: 1rem;
+    padding: 0.5rem 0;
 }
 
 .img-footer{
-    height: 2rem;
+    height: 2.1rem;
     margin: 0 1rem;
+    border-radius: 5px;
+    box-shadow: 3px 2px 5px black ;
 }
 
 .img-footer:focus{
@@ -156,16 +157,17 @@ footer div div p{
 
 .boton-wap{
     position: fixed;
-    bottom: 25px;
-    right: 25px;
+    bottom: 1.6rem;
+    right: 1.6rem;
+    z-index: 2;
 }
 .boton-wap-imagen{
-    height: 45px;
-    width: 45px;
+    height: 2.5rem;
+    width: 2.5rem;
 }
 
 .boton-wap-imagen:focus{
-    transform: scale(0.8);
+    transform: scale(0.7);
 }
 
 /* ESTILOS PARTICULARES */
@@ -175,10 +177,15 @@ footer div div p{
 .main-index{
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.crl-img-home{
+    width: 100%;
 }
 
 .img-home{
-    height: 15rem;
+    height: 11rem;
 }
 
 /* estilos -> About Me */
@@ -208,10 +215,18 @@ footer div div p{
 .estilos-clases{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
+.estilos-card-clases{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .estilos-img-clases{
-    height: 180px;
+    height: 11.2rem;
     width: 100%;
     margin-top: 1rem;
 }
@@ -296,6 +311,66 @@ fieldset div textarea{
     margin: 1rem;
 }
 
+@media screen and (min-width:768px){
+
+    /* ESTILOS GENERALES */
+
+    /* boton de whatsapp */
+
+    .boton-wap-imagen{
+        height: 2.8rem;
+        width: 2.8rem;
+    }
+
+    /* ESTILOS PARTICULARES */
+
+    /* estilos -> Home */
+
+    .crl-img-home{
+        width: 95%;
+    }
+
+    .img-home{
+        height: 25rem;
+    }
+    
+    /* estilos -> Clases */
+
+    .estilos-img-clases{
+        width: 50%;
+    }
+
+    /* estilos -> Contacto */
+
+    fieldset{
+        width: 80%;
+    }
+
+    fieldset div{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    fieldset div label{
+        width: 35%;
+    }
+
+    fieldset div input{
+        margin: 0.7rem 0;
+        width: 40%;
+    }
+
+    fieldset div textarea{
+        margin: 0.7rem 0;
+        width: 40%;
+    }
+
+    .form-button{
+        width: 25%;
+    }
+
+}
+
 @media screen and (min-width:992px){
 
     /* ESTILOS GENERALES */
@@ -354,9 +429,8 @@ fieldset div textarea{
         align-items: center;
     }
 
-    .img-home{
-        width: 100vw;
-        height: 30rem;
+    .crl-img-home{
+        width: 200%;
     }
 
     .p-home{
@@ -385,8 +459,8 @@ fieldset div textarea{
     }
     
     .estilos-img-clases{
-        height: 200px;
-        width: 50%;
+        height: 12.5rem;
+
     }
 
     .p-clases{
@@ -422,22 +496,8 @@ fieldset div textarea{
         width: 50%;
     }
 
-    fieldset div{
-        flex-direction: row;
-        justify-content: center;
-    }
     fieldset div label{
         width: 25%;
-    }
-
-    fieldset div input{
-        margin: 0.7rem 0;
-        width: 40%;
-    }
-
-    fieldset div textarea{
-        margin: 0.7rem 0;
-        width: 40%;
     }
 
     .form-button{
@@ -450,21 +510,5 @@ fieldset div textarea{
         color:#ebdbc3;
         box-shadow: 3px 2px 5px black ;
     }
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
