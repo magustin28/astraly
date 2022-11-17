@@ -103,7 +103,7 @@ footer{
 }
 
 footer div{
-    padding: 0.8rem;
+    padding: 0.8rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -115,6 +115,7 @@ footer div div{
 }
 
 footer div div div{
+    display: flex;
     flex-direction: row;
 }
 
@@ -122,6 +123,7 @@ footer div div a{
     text-decoration: none;
     text-shadow: 3px 2px 5px black;
     text-align: center;
+    margin: 0.3rem 0;
 }
 
 footer div div a:hover{
@@ -131,7 +133,6 @@ footer div div a:hover{
 
 footer div div p{
     text-shadow: 3px 2px 5px black;
-    padding: 0.5rem 0;
 }
 
 .img-footer{
@@ -150,7 +151,7 @@ footer div div p{
     font-size: 1rem;
     font-style: italic;
     text-shadow: 3px 2px 5px black;
-    padding-bottom: 1rem;
+    padding: 0.5rem 0;
 }
 
 /* boton de whatsapp */
@@ -162,8 +163,8 @@ footer div div p{
     z-index: 2;
 }
 .boton-wap-imagen{
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2.8rem;
+    width: 2.8rem;
 }
 
 .boton-wap-imagen:focus{
@@ -185,7 +186,8 @@ footer div div p{
 }
 
 .img-home{
-    height: 11rem;
+    height: 15rem;
+    border-radius: 10px;
 }
 
 /* estilos -> About Me */
@@ -302,6 +304,10 @@ fieldset div textarea{
     box-shadow: 3px 2px 5px black ;
 }
 
+.button-footer{
+    display: flex;
+    flex-direction: row;
+}
 
 .form-button{
     background-color: #ebdbc3;
@@ -314,13 +320,6 @@ fieldset div textarea{
 @media screen and (min-width:768px){
 
     /* ESTILOS GENERALES */
-
-    /* boton de whatsapp */
-
-    .boton-wap-imagen{
-        height: 2.8rem;
-        width: 2.8rem;
-    }
 
     /* ESTILOS PARTICULARES */
 
