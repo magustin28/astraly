@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*border: 1px solid black;*/
 }
 
 /* ESTILOS GENERALES */
@@ -304,7 +303,7 @@ fieldset div textarea{
     box-shadow: 3px 2px 5px black ;
 }
 
-.button-footer{
+.button-contacto{
     display: flex;
     flex-direction: row;
 }
@@ -373,8 +372,6 @@ fieldset div textarea{
 @media screen and (min-width:992px){
 
     /* ESTILOS GENERALES */
-
-    /* estilos header */
 
     /* estilos nav */
 
@@ -459,7 +456,6 @@ fieldset div textarea{
     
     .estilos-img-clases{
         height: 12.5rem;
-
     }
 
     .p-clases{
