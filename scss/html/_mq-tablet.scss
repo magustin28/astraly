@@ -1,0 +1,84 @@
+/* MEDIA QUERIES 768PX */
+
+@media screen and (min-width:768px){
+
+    /* ESTILOS GENERALES */
+
+    /* ESTILOS PARTICULARES */
+
+    /* estilos -> Home */
+
+    div{
+        .main-index{
+            .crl-img-home{
+                width: 95%;
+                .img-home{
+                    height: 25rem;
+                }
+            }
+            p{
+                width: 95%;
+            }
+        }
+    }
+
+    /* estilos -> About Me */
+
+    div{
+        main{
+            .div-about-me{
+                .p-about-me{
+                    width: 95%;
+                }
+            }
+
+        }
+    }
+    
+
+    /* estilos -> Clases */
+
+    div{
+        main{
+            .estilos-clases{
+                .estilos-card-clases{
+                    .estilos-img-clases{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    /* estilos -> Contacto */
+
+    div{
+        main{
+            form{
+                fieldset{
+                    width: 80%;
+                    div{
+                        flex-direction: row;
+                        justify-content: center;
+                        label{
+                            width: 35%;
+                        }
+                        input{
+                            margin: 0.7rem 0;
+                            width: 40%;
+                        }
+                        textarea{
+                            margin: 0.7rem 0;
+                            width: 40%;
+                        }
+                    }
+                    .button-contacto{
+                        .form-button{
+                            width: 25%;
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}

@@ -1,0 +1,169 @@
+/* ESTILOS GENERALES */
+
+/* estilos body */
+
+body{
+    font-family: $font-family;
+    background-color: $color-bg-prinicipal;
+}
+
+/* estilos link, párrafos */
+
+a, p, h1, h2, h3, h4{
+    color: $color-text;
+    &:hover{
+        color: $color-text;
+    }
+}
+
+/* estilos body-grid */
+
+div{
+    .body-grid{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 0.3fr 1fr 0.5fr;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    }
+}
+
+/* estilos header */
+
+div{
+    header{
+        background-color: $color-bg-secundario;
+        grid-area: header;
+        padding: 1rem 0;
+        nav{
+            div{
+                 .header-logo{
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    img{
+                        height: 4rem;}
+                    h1{
+                        a{
+                            text-decoration: none;
+                            text-shadow: $text-shadow;
+                            &:hover{
+                                text-shadow: $text-shadow;}
+                        }       
+                    }  
+                }
+
+            }
+        }
+    }
+}
+
+/* estilos nav */
+
+div{
+    header{
+        nav{
+            div{
+                div{
+                    ul{
+                        list-style: none;
+                        li{
+                            text-shadow: $text-shadow;
+                            .menu-link{
+                                text-decoration: none;
+                                color: $color-text;
+                                font-size: 1rem;
+                            }
+                        }                         
+                    }                
+                }
+            }
+
+        }
+    }
+}
+
+/* estilos main */
+
+div{
+    main{
+        grid-area: main;
+    }
+    .main-gral-padding{
+        padding: 0 1rem;
+    }
+    .main-gral-margin{
+        margin: 1rem 0;
+    }
+}
+
+/* estilos footer */
+
+footer{
+    background-color: $color-bg-secundario;
+    grid-area: footer;
+    div{
+        padding: 0.8rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div{
+            display: flex;
+            flex-direction: column;
+        }
+        div{
+            div{
+                display: flex;
+                flex-direction: row;
+            }
+            p{
+                text-shadow: $text-shadow;
+            }
+            a{
+                text-decoration: none;
+                text-shadow: $text-shadow;
+                text-align: center;
+                margin: 0.3rem 0;
+                &:hover{
+                    text-decoration: none;
+                    text-shadow: $text-shadow;
+                }
+                .img-footer{
+                    height: 2.1rem;
+                    margin: 0 1rem;
+                    border-radius: 5px;
+                    box-shadow: $box-shadow;
+                    &:focus{
+                        transform: scale(1.3);
+                    }
+                }
+            }
+        }
+    }
+    .p-footer{
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+    text-shadow: $text-shadow;
+    padding: 0.5rem 0;
+    }
+}
+
+/* boton de whatsapp */
+
+.boton-wap{
+    position: fixed;
+    bottom: 1.6rem;
+    right: 1.6rem;
+    z-index: 2;
+   .boton-wap-imagen{
+        height: 2.8rem;
+        width: 2.8rem;
+        &:focus{
+            transform: scale(0.7);
+        }
+    }
+}

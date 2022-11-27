@@ -1,0 +1,156 @@
+/* MEDIA QUERIES 992PX */
+
+@media screen and (min-width:992px){
+
+    /* ESTILOS GENERALES */
+
+    /* estilos nav */
+
+    div{
+        header{
+            nav{
+                div{
+                    div{
+                        ul{
+                            border-bottom: 2px solid $color-text;
+                            li{
+                                padding: 0.6rem;
+                                .menu-link{
+                                    font-size: 1.2rem;
+                                    &:hover{
+                                        color: $color-text;
+                                        box-shadow: 1px 1px 5px $color-text;
+                                        transform: scale(0.9);
+                                    }
+                                } 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* estilos main */
+
+    div{
+        .main-gral-margin{
+            margin: 1.5rem;
+        }
+    }
+
+    /* estilos footer */
+
+    footer{
+        div{
+            flex-direction: row;
+            justify-content: space-evenly;
+            div{
+                a{
+                    .img-footer:hover{
+                        transform: scale(1.3);
+                    }
+                }
+
+            }
+        }
+    } 
+
+    /* boton de whatsapp */
+
+    .boton-wap{
+        .boton-wap-imagen:hover{
+            transform: scale(0.8);
+        }
+    }
+
+    /* ESTILOS PARTICULARES */
+
+    /* estilos -> Home */
+
+    div{
+        .main-index{
+            flex-direction: row;
+            align-items: center;
+            .p-home{
+                margin: 0 2rem;
+            }
+        }
+    }
+
+    /* estilos -> About Me */
+
+    div{
+        main{
+            .div-about-me{
+                flex-direction: row;
+                justify-content: space-evenly;
+                .p-about-me{
+                    width: 50%;
+                }
+                .img-about-me{
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    /* estilos -> Clases */
+
+    .estilos-clases{
+        flex-direction: row;
+    }
+    
+    .estilos-img-clases{
+        height: 12.5rem;
+    }
+
+    .p-clases{
+        margin: 0 1rem;
+    }
+    
+    /* estilos -> E-book */
+
+    .catalogo-e-book{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .e-book{
+        border: 2px solid grey;
+    }    
+
+    .img-e-book{
+        width: 100%;
+        height: 300px;
+    }
+    
+    .a-e-book:hover{
+        border: 1px solid #ebdbc3;
+        background-color: #735376;
+        color:#ebdbc3;
+        box-shadow: 3px 2px 5px black ;
+    }
+
+    /* estilos -> Contacto */
+
+    fieldset{
+        width: 50%;
+    }
+
+    fieldset div label{
+        width: 25%;
+    }
+
+    .form-button{
+        width: 20%;
+    }
+
+    .form-button:hover{
+        border: 1px solid #ebdbc3;
+        background-color: #735376;
+        color:#ebdbc3;
+        box-shadow: 3px 2px 5px black ;
+    }
+
+}

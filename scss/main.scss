@@ -1,0 +1,20 @@
+/* reset*/ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+// Utilidades
+@import "utilidades/variables.scss";
+@import "utilidades/mixin.scss";
+@import "utilidades/extend.scss";
+
+// Estilos
+@import "html/estilos-generales.scss";
+@import "html/estilos-particulares.scss";
+
+// Medias Queries
+@import "html/mq-tablet.scss";
+@import "html/mq-desktop.scss";
