@@ -41,20 +41,20 @@
 
     /* estilos footer */
 
-    footer{
-        div{
-            flex-direction: row;
-            justify-content: space-evenly;
+    div{
+        footer{
             div{
-                a{
-                    .img-footer:hover{
-                        transform: scale(1.3);
+                div{
+                    a{
+                        .img-footer:hover{
+                            transform: scale(1.3);
+                        }
                     }
-                }
 
+                }
             }
         }
-    } 
+    }
 
     /* boton de whatsapp */
 
@@ -72,8 +72,11 @@
         .main-index{
             flex-direction: row;
             align-items: center;
-            .p-home{
-                margin: 0 2rem;
+            .div-index{
+                height: 25rem;
+                display: flex;
+                flex-direction: column;
+                align-items:space-around;
             }
         }
     }
@@ -101,7 +104,9 @@
         main{
             .estilos-clases{
                 flex-direction: row;
+                align-items: start;
                 .estilos-card-clases{
+                    width: 50%;
                     .estilos-img-clases{
                         height: 12.5rem;
                     }

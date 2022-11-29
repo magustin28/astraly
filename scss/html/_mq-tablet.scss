@@ -4,6 +4,15 @@
 
     /* ESTILOS GENERALES */
 
+    div{
+        footer{
+            div{
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+        }
+    }
+    
     /* ESTILOS PARTICULARES */
 
     /* estilos -> Home */
@@ -16,7 +25,7 @@
                     height: 25rem;
                 }
             }
-            p{
+            .div-index{
                 width: 95%;
             }
         }

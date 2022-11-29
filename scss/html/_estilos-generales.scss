@@ -102,53 +102,52 @@ div{
 
 /* estilos footer */
 
-footer{
-    background-color: $color-bg-secundario;
-    grid-area: footer;
-    div{
-        padding: 0.8rem 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+div{
+    footer{
+        background-color: $color-bg-secundario;
+        padding-top: 1rem;
+        grid-area: footer;
         div{
-            display: flex;
-            flex-direction: column;
-        }
-        div{
+            @include flex-column;
+            align-items: center;
             div{
-                display: flex;
-                flex-direction: row;
+                @include flex-column;
             }
-            p{
-                text-shadow: $text-shadow;
-            }
-            a{
-                text-decoration: none;
-                text-shadow: $text-shadow;
-                text-align: center;
-                margin: 0.3rem 0;
-                &:hover{
-                    text-decoration: none;
+            div{
+                div{
+                    @include flex-row;
+                }
+                p{
                     text-shadow: $text-shadow;
                 }
-                .img-footer{
-                    height: 2.1rem;
-                    margin: 0 1rem;
-                    border-radius: 5px;
-                    box-shadow: $box-shadow;
-                    &:focus{
-                        transform: scale(1.3);
+                a{
+                    text-decoration: none;
+                    text-shadow: $text-shadow;
+                    text-align: center;
+                    margin: 0.3rem 0;
+                    &:hover{
+                        text-decoration: none;
+                        text-shadow: $text-shadow;
+                    }
+                    .img-footer{
+                        height: 2.1rem;
+                        margin: 0 1rem;
+                        border-radius: 5px;
+                        box-shadow: $box-shadow;
+                        &:focus{
+                            transform: scale(1.3);
+                        }
                     }
                 }
             }
         }
-    }
-    .p-footer{
-    text-align: center;
-    font-size: 1rem;
-    font-style: italic;
-    text-shadow: $text-shadow;
-    padding: 0.5rem 0;
+        .p-footer{
+            padding: 1rem 0;
+            text-align: center;
+            font-size: 1rem;
+            font-style: italic;
+            text-shadow: $text-shadow;
+        }
     }
 }
 

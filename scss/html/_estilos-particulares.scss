@@ -5,13 +5,22 @@
 div{
     .main-index{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         .crl-img-home{
             width: 100%;
             .img-home{
-                height:15rem;
+                height:11rem;
                 border-radius: 10px;
+            }
+        }
+        .div-index{
+            p{
+                text-align: justify;
+                span{
+                    text-decoration: underline;
+                    font-style: italic;
+                }
             }
         }
     }
@@ -31,6 +40,11 @@ div{
             align-items: center;
             .p-about-me{
                 padding: 0 1rem;
+                text-align: justify;
+                span{
+                    font-weight: bold;
+                    text-decoration: underline;
+                }
             }
             .img-about-me{
                 height: 20rem;
@@ -56,6 +70,9 @@ div{
                     height: 11.2rem;
                     width: 100%;
                     margin-top: 1rem;
+                }
+                .p-clases{
+                    text-align: justify;
                 }
             }
         }
