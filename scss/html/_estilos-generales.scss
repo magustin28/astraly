@@ -118,6 +118,7 @@ div{
                     @include flex-row;
                 }
                 p{
+                    margin-top: 1rem;
                     text-shadow: $text-shadow;
                 }
                 a{

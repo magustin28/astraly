@@ -86,6 +86,7 @@ div footer {
       display: flex;
       flex-direction: row; }
     div footer div div p {
+      margin-top: 1rem;
       text-shadow: 3px 3px 5px black; }
     div footer div div a {
       text-decoration: none;
@@ -235,6 +236,8 @@ div main form {
   div footer div {
     flex-direction: row;
     justify-content: space-evenly; }
+    div footer div div p {
+      margin-top: 0; }
   /* ESTILOS PARTICULARES */
   /* estilos -> Home */
   div .main-index .crl-img-home {

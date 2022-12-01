@@ -9,6 +9,12 @@
             div{
                 flex-direction: row;
                 justify-content: space-evenly;
+                div{
+                    p{
+                        margin-top: 0;
+
+                    }
+                }
             }
         }
     }
