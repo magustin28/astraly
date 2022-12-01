@@ -1,3 +1,4 @@
+
 /* MEDIA QUERIES 992PX */
 
 @media screen and (min-width:992px){
@@ -132,10 +133,7 @@
                         height: 300px;
                     }
                     .a-e-book:hover{
-                        border: 1px solid $color-text;
-                        background-color: $color-bg-secundario;
-                        color: $color-text;
-                        box-shadow: $box-shadow;
+                        @extend %boton;
                     }
                 }
             }
@@ -158,10 +156,7 @@
                         .form-button{
                             width: 20%;
                             &:hover{
-                                border: 1px solid $color-text;
-                                background-color: $color-bg-secundario;
-                                color: $color-text;
-                                box-shadow: $box-shadow;
+                                @extend %boton;
                             }
                         }
                     }

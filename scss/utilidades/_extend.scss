@@ -1,5 +1,9 @@
-%flex-column-item-center{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* MEDIA QUERIES 992PX */
+@media screen and (min-width:992px){
+    %boton{
+        border: 1px solid $color-text;
+        background-color: $color-bg-secundario;
+        color: $color-text;
+        box-shadow: $box-shadow;
+    }
 }

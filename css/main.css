@@ -3,8 +3,15 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  /*border: 1px solid black;*/ }
+  box-sizing: border-box; }
+
+/* MEDIA QUERIES 992PX */
+@media screen and (min-width: 992px) {
+  div main .catalogo-e-book .e-book .a-e-book:hover, div main form fieldset .button-contacto .form-button:hover {
+    border: 1px solid #ebdbc3;
+    background-color: #735376;
+    color: #ebdbc3;
+    box-shadow: 3px 3px 5px black; } }
 
 /* ESTILOS GENERALES */
 /* estilos body */
@@ -39,15 +46,15 @@ div header {
       height: 4rem; }
     div header nav div .header-logo h1 a {
       text-decoration: none;
-      text-shadow: 3px 2px 5px black; }
+      text-shadow: 3px 3px 5px black; }
       div header nav div .header-logo h1 a:hover {
-        text-shadow: 3px 2px 5px black; }
+        text-shadow: 3px 3px 5px black; }
 
 /* estilos nav */
 div header nav div div ul {
   list-style: none; }
   div header nav div div ul li {
-    text-shadow: 3px 2px 5px black; }
+    text-shadow: 3px 3px 5px black; }
     div header nav div div ul li .menu-link {
       text-decoration: none;
       color: #ebdbc3;
@@ -58,7 +65,7 @@ div main {
   grid-area: main; }
 
 div .main-gral-padding {
-  padding: 0 1rem; }
+  padding: 0 1.8rem; }
 
 div .main-gral-margin {
   margin: 1rem 0; }
@@ -79,20 +86,20 @@ div footer {
       display: flex;
       flex-direction: row; }
     div footer div div p {
-      text-shadow: 3px 2px 5px black; }
+      text-shadow: 3px 3px 5px black; }
     div footer div div a {
       text-decoration: none;
-      text-shadow: 3px 2px 5px black;
+      text-shadow: 3px 3px 5px black;
       text-align: center;
       margin: 0.3rem 0; }
       div footer div div a:hover {
         text-decoration: none;
-        text-shadow: 3px 2px 5px black; }
+        text-shadow: 3px 3px 5px black; }
       div footer div div a .img-footer {
         height: 2.1rem;
         margin: 0 1rem;
         border-radius: 5px;
-        box-shadow: 3px 2px 5px black; }
+        box-shadow: 3px 3px 5px black; }
         div footer div div a .img-footer:focus {
           transform: scale(1.3); }
   div footer .p-footer {
@@ -100,7 +107,7 @@ div footer {
     text-align: center;
     font-size: 1rem;
     font-style: italic;
-    text-shadow: 3px 2px 5px black; }
+    text-shadow: 3px 3px 5px black; }
 
 /* boton de whatsapp */
 .boton-wap {
@@ -123,7 +130,7 @@ div .main-index {
   div .main-index .crl-img-home {
     width: 100%; }
     div .main-index .crl-img-home .img-home {
-      height: 11rem;
+      height: 12rem;
       border-radius: 10px; }
   div .main-index .div-index p {
     text-align: justify; }
@@ -138,8 +145,8 @@ div main .h2-about-me {
 div main .div-about-me {
   display: flex;
   flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center; }
+  align-items: center;
+  justify-content: center; }
   div main .div-about-me .p-about-me {
     padding: 0 1rem;
     text-align: justify; }
@@ -187,7 +194,7 @@ div main .catalogo-e-book {
       color: #735376;
       text-decoration: none;
       padding: 0.8rem 2rem;
-      box-shadow: 3px 2px 5px black; }
+      box-shadow: 3px 3px 5px black; }
 
 /* estilos -> Contacto */
 div main form {
@@ -208,10 +215,10 @@ div main form {
         margin: 1rem 0; }
       div main form fieldset div input {
         border-radius: 1rem;
-        box-shadow: 3px 2px 5px black; }
+        box-shadow: 3px 3px 5px black; }
       div main form fieldset div textarea {
         border-radius: 1rem;
-        box-shadow: 3px 2px 5px black; }
+        box-shadow: 3px 3px 5px black; }
     div main form fieldset .button-contacto {
       display: flex;
       flex-direction: row; }
@@ -319,20 +326,10 @@ div main form {
       div main .catalogo-e-book .e-book .img-e-book {
         width: 100%;
         height: 300px; }
-      div main .catalogo-e-book .e-book .a-e-book:hover {
-        border: 1px solid #ebdbc3;
-        background-color: #735376;
-        color: #ebdbc3;
-        box-shadow: 3px 2px 5px black; }
   /* estilos -> Contacto */
   div main form fieldset {
     width: 50%; }
     div main form fieldset div label {
       width: 25%; }
     div main form fieldset .button-contacto .form-button {
-      width: 20%; }
-      div main form fieldset .button-contacto .form-button:hover {
-        border: 1px solid #ebdbc3;
-        background-color: #735376;
-        color: #ebdbc3;
-        box-shadow: 3px 2px 5px black; } }
+      width: 20%; } }

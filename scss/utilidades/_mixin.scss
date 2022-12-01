@@ -7,3 +7,9 @@
     display: flex;
     flex-direction: row;
 }
+
+@mixin flex-column-reverse-items-center{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
