@@ -14,7 +14,7 @@ div{
         }
         .div-index{
             p{
-                text-align: justify;
+                @include font-size-justify;
                 span{
                     text-decoration: underline;
                     font-style: italic;
@@ -35,8 +35,7 @@ div{
             @include flex-column-reverse-items-center;
             justify-content: center;
             .p-about-me{
-                padding: 0 1rem;
-                text-align: justify;
+                @include font-size-justify;
                 span{
                     font-weight: bold;
                     text-decoration: underline;
@@ -54,19 +53,22 @@ div{
 
 div{
     main{
+        .p-clases{
+            @include font-size-justify;
+        }
         .estilos-clases{
-            @include flex-column;
+            @extend %flex-column;
             align-items: center;
             .estilos-card-clases{
-                @include flex-column;
+                @extend %flex-column;
                 align-items: center;
                 .estilos-img-clases{
                     height: 11.2rem;
                     width: 100%;
                     margin-top: 1rem;
                 }
-                .p-clases{
-                    text-align: justify;
+                .p-card-clases{
+                    @include font-size-justify;
                 }
             }
         }
@@ -77,6 +79,9 @@ div{
 
 div{
     main{
+        p{
+            @include font-size-justify;
+        }
         .catalogo-e-book{
             @include flex-column;
             align-items: center;
@@ -89,7 +94,7 @@ div{
                     width: 150px;
                     height: 100%;
                 }
-                .p-e-book{
+                .p-card-e-book{
                     padding: 1rem 0;
                 }
                 .a-e-book{
@@ -112,7 +117,7 @@ div{
             display: flex;
             justify-content: center;
             fieldset{
-                width: 90%;
+                width: 85%;
                 legend{
                     color: $color-text;
                     font-size: 1.3rem;
@@ -123,6 +128,7 @@ div{
                     @include flex-column;
                     label{
                         color: $color-text;
+                        font-size: $font-p;
                         margin: 1rem 0;
                     }
                     input{
@@ -135,7 +141,7 @@ div{
                     }
                 }
                 .button-contacto{
-                    @include flex-row;
+                    @extend %flex-row;
                     .form-button{
                         background-color: $color-text;
                         color: $color-bg-secundario;

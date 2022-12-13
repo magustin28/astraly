@@ -90,10 +90,11 @@
                 flex-direction: row;
                 justify-content: space-evenly;
                 .p-about-me{
-                    width: 50%;
+                    width: 55%;
                 }
                 .img-about-me{
                     width: auto;
+                    margin: 0.3rem 0;
                 }
             }
         }
@@ -111,7 +112,7 @@
                     .estilos-img-clases{
                         height: 12.5rem;
                     }
-                    .p-clases{
+                    .p-card-clases{
                         margin: 0 1rem;
                     } 
                 }
@@ -133,7 +134,7 @@
                         height: 300px;
                     }
                     .a-e-book:hover{
-                        @extend %boton;
+                        @include boton;
                     }
                 }
             }
@@ -156,7 +157,7 @@
                         .form-button{
                             width: 20%;
                             &:hover{
-                                @extend %boton;
+                                @include boton;
                             }
                         }
                     }
