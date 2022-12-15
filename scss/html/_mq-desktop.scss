@@ -17,7 +17,7 @@
                             li{
                                 padding: 0.6rem;
                                 .menu-link{
-                                    font-size: 1.3rem;
+                                    font-size: 1.2rem;
                                     &:hover{
                                         color: $color-text;
                                         box-shadow: 1px 1px 5px $color-text;
@@ -158,6 +158,38 @@
                             width: 20%;
                             &:hover{
                                 @include boton;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* MEDIA QUERIES 1400PX */
+
+@media screen and (min-width:1400px){
+
+    /* ESTILOS GENERALES */
+
+    /* estilos nav */
+
+    div{
+        header{
+            nav{
+                div{
+                    div{
+                        ul{
+                            li{
+                                .menu-link{
+                                    font-size: 1.3rem;
+                                    &:hover{
+                                        color: $color-text;
+                                        box-shadow: 1px 1px 5px $color-text;
+                                        transform: scale(0.9);
+                                    }
+                                } 
                             }
                         }
                     }
