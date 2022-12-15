@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*border: 1px solid black;*/ }
+  border: 1px solid black; }
 
 /* Extend */
 /* ESTILOS PARTICULARES */
@@ -290,7 +290,7 @@ div main form {
     div header nav div div ul li {
       padding: 0.6rem; }
       div header nav div div ul li .menu-link {
-        font-size: 1.2rem; }
+        font-size: 1.3rem; }
         div header nav div div ul li .menu-link:hover {
           color: #ebdbc3;
           box-shadow: 1px 1px 5px #ebdbc3;
