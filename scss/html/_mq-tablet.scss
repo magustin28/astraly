@@ -4,6 +4,27 @@
 
     /* ESTILOS GENERALES */
 
+    /* estilos header */
+
+    div{
+        header{
+            nav{
+                div{
+                    .header-logo{
+                        h1{
+                            a{
+                                font-size: 2.3rem;
+                            }       
+                        }  
+                    }
+        
+                }
+            }
+        }
+    }
+
+    /* estilos footer */
+
     div{
         footer{
             div{
@@ -50,7 +71,6 @@
         }
     }
     
-
     /* estilos -> Clases */
 
     div{
